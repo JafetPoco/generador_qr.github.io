@@ -78,6 +78,8 @@ body{
 .grado{
     text-align: center;
     font-size: 13px;
+    padding-top: 1px;
+    margin-botton: 0;
 }
 
 .btn-secondary{
