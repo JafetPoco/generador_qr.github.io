@@ -35,3 +35,31 @@ function redirectToForm() {
 
 // Ejecutar la función al cargar la página
 window.onload = updateQRCode;
+
+function adjustFontSize() {
+    const container = document.getElementById('grado');
+    const initialFontSize = 13; // Tamaño de fuente para una línea
+    const reducedFontSize = 9; // Tamaño de fuente para dos o más líneas
+
+    // Restablecer el tamaño de la fuente a su valor original antes de medir
+    container.style.fontSize = `${initialFontSize}px`;
+
+    // Medir la altura del contenedor con el tamaño de fuente original
+    const heightWithInitialFontSize = container.scrollHeight;
+
+    // Establecer el tamaño de fuente reducido y medir de nuevo
+    container.style.fontSize = `${reducedFontSize}px`;
+    const heightWithReducedFontSize = container.scrollHeight;
+
+    // Restaurar el tamaño de fuente original
+    container.style.fontSize = `${initialFontSize}px`;
+
+    // Ajustar el tamaño de fuente según la altura medida
+    if (heightWithInitialFontSize > container.clientHeight) {
+        container.style.fontSize = `${reducedFontSize}px`;
+        container.style.paddingTop = "2px";
+    }
+}
+
+// Ejecutar la función cuando la página esté cargada
+window.addEventListener('load', adjustFontSize);
