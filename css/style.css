@@ -42,6 +42,11 @@ body{
     transform: scale(1.05);
 }
 
+.btn-primary:active {
+    background-color: rgb(3, 24, 36) !important;
+    border-color: rgb(6, 37, 54) !important;
+}
+
 .form-control:focus {
     border-color:rgb(6, 37, 54); /* Cambia esto por el color que desees */
     border-width: 2px;

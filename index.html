@@ -36,16 +36,27 @@
             <div class="d-flex justify-content-center">
                 <div class="buttons">
                     <button type="button" class="btn btn-primary" id="descargar">Descargar</button>
-                    <button type="button" class="btn btn-secondary" onclick="redirectToForm();">Editar Datos</button>
+                    <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">Editar Datos</button>
                 </div>
-                <script>
-                    function takeshot(){
-    html2canvas(document.querySelector("identificador")).then(function(canvas) {
-        document.body.appendChild(canvas);
-    });
-
-}
-                </script>
+            </div>
+        </div>
+    </div>
+  
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">¿Desea confirmar la edición de datos?</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                <span class="fw-bold">Recordatorio:</span> Los cambios que realices solo afectarán la creación del carnet y no modificarán la información del sistema completo.
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary" id="boton" onclick="redirectToForm();">Continuar</button>
+                </div>
             </div>
         </div>
     </div>
