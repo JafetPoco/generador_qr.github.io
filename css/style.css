@@ -84,7 +84,7 @@ body{
     text-align: center;
     font-size: 13px;
     padding-top: 1px;
-    margin-botton: 0;
+    margin-bottom: 0;
 }
 
 .btn-secondary{
@@ -110,4 +110,25 @@ body{
     justify-content: center;
     align-items: center;
     height: 45px;
+}
+
+/* DISEÑOS AUXILIARES */
+
+.nom_colegio {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
+    color: rgb(24, 26, 101);
+    margin: 0 0 0 11px;
+}
+
+.kids {
+    width: 70%;
+    margin: 0 0 0 19px;
+    transform: translateY(-3px);
+
+}
+
+.logo_mnt {
+    width: 83%;
+    margin: 0 0 0 14px;
 }
