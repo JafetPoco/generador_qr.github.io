@@ -7,9 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (design === 'EF') {
       contentDiv.innerHTML = `
         <img class="logo" src="img/logo_ok.png" alt="logotipo">
-        <h1>Bienvenido al Diseño A</h1>
-        <p>Este es el contenido especial para el diseño A.</p>
-        <img src="imagenA.jpg" alt="Imagen Diseño A">
+        <p class="nom_ef">EL FARO</p>
       `;
     } else if (design === 'MNT') {
       contentDiv.innerHTML = `
@@ -19,8 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
       `;
     } else {
       contentDiv.innerHTML = `
-        <h1>Diseño por defecto</h1>
-        <p>No se ha seleccionado un diseño válido, este es el contenido por defecto.</p>
+        <img class="logo" src="img/logo_ok.png" alt="logotipo">
       `;
     }
   });
