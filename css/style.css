@@ -142,5 +142,17 @@ body{
     font-weight: 600;
     font-size: 14px;
     color: rgb(24, 26, 101);
-    margin: 0 0 0 11px;
+    margin: 0 0 0 18px;
+}
+
+.logo_ef {
+    width: 105%;
+    margin: 0 0 0 2px;
+}
+
+/* FS */ 
+
+.logo_fs {
+    width: 105%;
+    margin: 8px 0 0 4px;
 }
