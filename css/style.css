@@ -85,6 +85,7 @@ body{
     font-size: 13px;
     padding-top: 1px;
     margin-bottom: 0;
+    width: 5.7cm;
 }
 
 .btn-secondary{
@@ -125,12 +126,12 @@ body{
 .kids {
     width: 70%;
     margin: 0 0 0 19px;
-    transform: translateY(-3px);
+    transform: translateY(-2px);
 
 }
 
 .logo_mnt {
-    width: 83%;
+    width: 85%;
     margin: 0 0 0 14px;
 }
 

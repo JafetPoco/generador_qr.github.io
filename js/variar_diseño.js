@@ -11,8 +11,8 @@ document.addEventListener('DOMContentLoaded', function() {
       `;
     } else if (design === 'MNT') {
       contentDiv.innerHTML = `
-        <img class="logo_mnt" src="img/logo_ok.png" alt="logotipo">
-        <p class="nom_colegio">MARANATHA</p>
+        <img class="logo_mnt" src="img/logo_2.jpg" alt="logotipo">
+        <h6 class="nom_colegio">MARANATHA</h6>
         <img class="kids" src="img/img_mrt.jpg" alt="kids">
       `;
     } else {
